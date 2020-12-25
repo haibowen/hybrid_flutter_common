@@ -140,6 +140,12 @@
       "languageVersion": "2.9"
     },
     {
+      "name": "event_bus",
+      "rootUri": "file:///Users/edz/.fvm/versions/1.22.5-stable/.pub-cache/hosted/http%2558%2547%2547mirrors.cnnic.cn%2547dart-pub/event_bus-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/edz/.fvm/versions/1.22.5-stable/.pub-cache/hosted/http%2558%2547%2547mirrors.cnnic.cn%2547dart-pub/fake_async-1.2.0-nullsafety.1",
       "packageUri": "lib/",
@@ -530,7 +536,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-12-24T10:48:30.381144Z",
+  "generated": "2020-12-25T02:25:04.075354Z",
   "generator": "pub",
   "generatorVersion": "2.10.4"
 }
