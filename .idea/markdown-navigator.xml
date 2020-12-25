@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FlexmarkProjectSettings">
+    <FlexmarkHtmlSettings flexmarkSpecExampleRendering="0" flexmarkSpecExampleRenderHtml="false">
+      <flexmarkSectionLanguages>
+        <option name="1" value="Markdown" />
+        <option name="2" value="HTML" />
+        <option name="3" value="flexmark-ast:1" />
+      </flexmarkSectionLanguages>
+    </FlexmarkHtmlSettings>
+  </component>
+  <component name="MarkdownProjectSettings">
+    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" synchronizePreviewPosition="$ENABLE_FLUTTER_DESKTOP$" highlightPreviewType="LINE" highlightFadeOut="5" highlightOnTyping="$ENABLE_FLUTTER_DESKTOP$" synchronizeSourcePosition="$ENABLE_FLUTTER_DESKTOP$" verticallyAlignSourceAndPreviewSyncPosition="$ENABLE_FLUTTER_DESKTOP$" showSearchHighlightsInPreview="$ENABLE_FLUTTER_DESKTOP$" showSelectionInPreview="$ENABLE_FLUTTER_DESKTOP$" lastLayoutSetsDefault="false">
+      <PanelProvider>
+        <provider providerId="com.vladsch.md.nav.editor.swing.html.panel" providerName="Default - Swing" />
+      </PanelProvider>
+    </PreviewSettings>
+    <ParserSettings gitHubSyntaxChange="false" correctedInvalidSettings="false" emojiShortcuts="1" emojiImages="0">
+      <PegdownExtensions>
+        <option name="ANCHORLINKS" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="ATXHEADERSPACE" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="FENCED_CODE_BLOCKS" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="INTELLIJ_DUMMY_IDENTIFIER" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="RELAXEDHRULES" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="STRIKETHROUGH" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="TABLES" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="TASKLISTITEMS" value="$ENABLE_FLUTTER_DESKTOP$" />
+      </PegdownExtensions>
+      <ParserOptions>
+        <option name="COMMONMARK_LISTS" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="EMOJI_SHORTCUTS" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="GFM_TABLE_RENDERING" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="PRODUCTION_SPEC_PARSER" value="$ENABLE_FLUTTER_DESKTOP$" />
+        <option name="SIM_TOC_BLANK_LINE_SPACER" value="$ENABLE_FLUTTER_DESKTOP$" />
+      </ParserOptions>
+    </ParserSettings>
+    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" imageUriSerials="false" addDocTypeHtml="$ENABLE_FLUTTER_DESKTOP$" noParaTags="false" plantUmlConversion="0">
+      <GeneratorProvider>
+        <provider providerId="com.vladsch.md.nav.editor.text.html.generator" providerName="Unmodified HTML Generator" />
+      </GeneratorProvider>
+      <headerTop />
+      <headerBottom />
+      <bodyTop />
+      <bodyBottom />
+    </HtmlSettings>
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="$ENABLE_FLUTTER_DESKTOP$" isCssTextEnabled="false" isDynamicPageWidth="$ENABLE_FLUTTER_DESKTOP$">
+      <StylesheetProvider>
+        <provider providerId="com.vladsch.md.nav.editor.text.html.css" providerName="No Stylesheet" />
+      </StylesheetProvider>
+      <ScriptProviders />
+      <cssText />
+      <cssUriHistory />
+    </CssSettings>
+  </component>
+</project>

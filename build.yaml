@@ -1,0 +1,59 @@
+targets:
+  $default:
+    builders:
+      code_gen_demo|mark_builder:
+        enabled: true
+
+builders:
+
+  user:
+    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+    builder_factories: ["userBuilder"]
+    build_extensions: {'.dart': ['.user.dart'] }
+    auto_apply: root_package
+    build_to: source
+
+  Router:
+    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+    builder_factories: ["routerBuilder"]
+    build_extensions: {'.dart': ['.rout.dart'] }
+    auto_apply: root_package
+    runs_before: [':routerCenter']
+    build_to: cache
+
+
+  routerCenter:
+    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+    builder_factories: ["routerCenterBuilder"]
+    build_extensions: {'.dart': ['.mark.dart'] }
+    auto_apply: root_package
+    build_to: source
+
+  server_entity:
+    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+    builder_factories: ["entityBuilder"]
+    build_extensions: {".dart": [".enti.dart"]}
+    auto_apply: root_package
+    build_to: cache
+    runs_before: [':apiGenerator']
+
+
+#  dio_entity:
+#    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+#    builder_factories: ["dioBuilder"]
+#    build_extensions: {".dart": [".dio.dart"]}
+#    auto_apply: root_package
+#    build_to: cache
+#    runs_before: [':apiGenerator']
+
+  apiGenerator:
+    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+    builder_factories: ["apiBuilder"]
+    build_extensions: {".dart": [".serv.dart"]}
+    auto_apply: root_package
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]
+
+
+
+

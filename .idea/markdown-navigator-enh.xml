@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownEnhProjectSettings">
+    <AnnotatorSettings targetHasSpaces="$ENABLE_FLUTTER_DESKTOP$" linkCaseMismatch="$ENABLE_FLUTTER_DESKTOP$" wikiCaseMismatch="$ENABLE_FLUTTER_DESKTOP$" wikiLinkHasDashes="$ENABLE_FLUTTER_DESKTOP$" notUnderWikiHome="$ENABLE_FLUTTER_DESKTOP$" targetNotWikiPageExt="$ENABLE_FLUTTER_DESKTOP$" notUnderSourceWikiHome="$ENABLE_FLUTTER_DESKTOP$" targetNameHasAnchor="$ENABLE_FLUTTER_DESKTOP$" targetPathHasAnchor="$ENABLE_FLUTTER_DESKTOP$" wikiLinkHasSlash="$ENABLE_FLUTTER_DESKTOP$" wikiLinkHasSubdir="$ENABLE_FLUTTER_DESKTOP$" wikiLinkHasOnlyAnchor="$ENABLE_FLUTTER_DESKTOP$" linkTargetsWikiHasExt="$ENABLE_FLUTTER_DESKTOP$" linkTargetsWikiHasBadExt="$ENABLE_FLUTTER_DESKTOP$" notUnderSameRepo="$ENABLE_FLUTTER_DESKTOP$" targetNotUnderVcs="false" linkNeedsExt="$ENABLE_FLUTTER_DESKTOP$" linkHasBadExt="$ENABLE_FLUTTER_DESKTOP$" linkTargetNeedsExt="$ENABLE_FLUTTER_DESKTOP$" linkTargetHasBadExt="$ENABLE_FLUTTER_DESKTOP$" wikiLinkNotInWiki="$ENABLE_FLUTTER_DESKTOP$" imageTargetNotInRaw="$ENABLE_FLUTTER_DESKTOP$" repoRelativeAcrossVcsRoots="$ENABLE_FLUTTER_DESKTOP$" multipleWikiTargetsMatch="$ENABLE_FLUTTER_DESKTOP$" unresolvedLinkReference="$ENABLE_FLUTTER_DESKTOP$" linkIsIgnored="$ENABLE_FLUTTER_DESKTOP$" anchorIsIgnored="$ENABLE_FLUTTER_DESKTOP$" anchorIsUnresolved="$ENABLE_FLUTTER_DESKTOP$" anchorLineReferenceIsUnresolved="$ENABLE_FLUTTER_DESKTOP$" anchorLineReferenceFormat="$ENABLE_FLUTTER_DESKTOP$" anchorHasDuplicates="$ENABLE_FLUTTER_DESKTOP$" abbreviationDuplicates="$ENABLE_FLUTTER_DESKTOP$" abbreviationNotUsed="$ENABLE_FLUTTER_DESKTOP$" attributeIdDuplicateDefinition="$ENABLE_FLUTTER_DESKTOP$" attributeIdNotUsed="$ENABLE_FLUTTER_DESKTOP$" footnoteDuplicateDefinition="$ENABLE_FLUTTER_DESKTOP$" footnoteUnresolved="$ENABLE_FLUTTER_DESKTOP$" footnoteDuplicates="$ENABLE_FLUTTER_DESKTOP$" footnoteNotUsed="$ENABLE_FLUTTER_DESKTOP$" macroDuplicateDefinition="$ENABLE_FLUTTER_DESKTOP$" macroUnresolved="$ENABLE_FLUTTER_DESKTOP$" macroDuplicates="$ENABLE_FLUTTER_DESKTOP$" macroNotUsed="$ENABLE_FLUTTER_DESKTOP$" referenceDuplicateDefinition="$ENABLE_FLUTTER_DESKTOP$" referenceUnresolved="$ENABLE_FLUTTER_DESKTOP$" referenceDuplicates="$ENABLE_FLUTTER_DESKTOP$" referenceNotUsed="$ENABLE_FLUTTER_DESKTOP$" referenceUnresolvedNumericId="$ENABLE_FLUTTER_DESKTOP$" enumRefDuplicateDefinition="$ENABLE_FLUTTER_DESKTOP$" enumRefUnresolved="$ENABLE_FLUTTER_DESKTOP$" enumRefDuplicates="$ENABLE_FLUTTER_DESKTOP$" enumRefNotUsed="$ENABLE_FLUTTER_DESKTOP$" enumRefLinkUnresolved="$ENABLE_FLUTTER_DESKTOP$" enumRefLinkDuplicates="$ENABLE_FLUTTER_DESKTOP$" simTocUpdateNeeded="$ENABLE_FLUTTER_DESKTOP$" simTocTitleSpaceNeeded="$ENABLE_FLUTTER_DESKTOP$" />
+    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="css" scriptDir="js" plainHtml="false" imageDir="" copyLinkedImages="false" imagePathType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="$ENABLE_FLUTTER_DESKTOP$" exportOnSettingsChange="$ENABLE_FLUTTER_DESKTOP$" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
+    <LinkMapSettings>
+      <textMaps />
+    </LinkMapSettings>
+  </component>
+  <component name="MarkdownNavigatorHistory">
+    <PasteImageHistory checkeredTransparentBackground="false" filename="image" directory="" onPasteImageTargetRef="3" onPasteLinkText="0" onPasteImageElement="1" onPasteLinkElement="1" onPasteReferenceElement="2" cornerRadius="20" borderColor="0" transparentColor="16777215" borderWidth="1" trimTop="0" trimBottom="0" trimLeft="0" trimRight="0" transparent="false" roundCorners="false" showPreview="$ENABLE_FLUTTER_DESKTOP$" bordered="false" scaled="false" cropped="false" hideInapplicableOperations="false" preserveLinkFormat="false" scale="50" scalingInterpolation="1" transparentTolerance="0" saveAsDefaultOnOK="false" linkFormat="0" addHighlights="false" showHighlightCoordinates="$ENABLE_FLUTTER_DESKTOP$" showHighlights="false" mouseSelectionAddsHighlight="false" outerFilled="false" outerFillColor="0" outerFillTransparent="$ENABLE_FLUTTER_DESKTOP$" outerFillAlpha="30">
+      <highlightList />
+      <directories />
+      <filenames />
+    </PasteImageHistory>
+    <CopyImageHistory checkeredTransparentBackground="false" filename="image" directory="" onPasteImageTargetRef="3" onPasteLinkText="0" onPasteImageElement="1" onPasteLinkElement="1" onPasteReferenceElement="2" cornerRadius="20" borderColor="0" transparentColor="16777215" borderWidth="1" trimTop="0" trimBottom="0" trimLeft="0" trimRight="0" transparent="false" roundCorners="false" showPreview="$ENABLE_FLUTTER_DESKTOP$" bordered="false" scaled="false" cropped="false" hideInapplicableOperations="false" preserveLinkFormat="false" scale="50" scalingInterpolation="1" transparentTolerance="0" saveAsDefaultOnOK="false" linkFormat="0" addHighlights="false" showHighlightCoordinates="$ENABLE_FLUTTER_DESKTOP$" showHighlights="false" mouseSelectionAddsHighlight="false" outerFilled="false" outerFillColor="0" outerFillTransparent="$ENABLE_FLUTTER_DESKTOP$" outerFillAlpha="30">
+      <highlightList />
+      <directories />
+      <filenames />
+    </CopyImageHistory>
+    <PasteLinkHistory onPasteImageTargetRef="3" onPasteTargetRef="1" onPasteLinkText="0" onPasteImageElement="1" onPasteLinkElement="1" onPasteWikiElement="2" onPasteReferenceElement="2" hideInapplicableOperations="false" preserveLinkFormat="false" useHeadingForLinkText="false" linkFormat="0" saveAsDefaultOnOK="false" />
+    <TableToJsonHistory>
+      <entries />
+    </TableToJsonHistory>
+    <TableSortHistory>
+      <entries />
+    </TableSortHistory>
+  </component>
+</project>
