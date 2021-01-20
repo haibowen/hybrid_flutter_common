@@ -30,17 +30,19 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
     for (var methodElement in (element as ClassElement).methods) {
       for (var annometadata in methodElement.metadata) {
         final metadata = annometadata.computeConstantValue();
-        if (metadata.type.name == "Post" ||
-            metadata.type.name == "Get" ||
-            metadata.type.name == "Put" ||
-            metadata.type.name == "Delete" ||
-            metadata.type.name == "Upload") {
-          if (!differentList.contains(methodElement.returnType.displayName)) {
-            if (ServerRestore.getInstance()
-                .map
-                .containsKey(methodElement.returnType.displayName)) {
-              improtBuffer.write(ServerRestore.getInstance()
-                  .map[methodElement.returnType.displayName]);
+        if (metadata.type.getDisplayString(withNullability: null) == "Post" ||
+            metadata.type.getDisplayString(withNullability: null) == "Get" ||
+            metadata.type.getDisplayString(withNullability: null) == "Put" ||
+            metadata.type.getDisplayString(withNullability: null) == "Delete" ||
+            metadata.type.getDisplayString(withNullability: null) == "Upload") {
+          if (!differentList.contains(methodElement.returnType
+              .getDisplayString(withNullability: null))) {
+            if (ServerRestore.getInstance().map.containsKey(methodElement
+                .returnType
+                .getDisplayString(withNullability: null))) {
+              improtBuffer.write(ServerRestore.getInstance().map[methodElement
+                  .returnType
+                  .getDisplayString(withNullability: null)]);
             } else {
               var pathSegments = buildStep.inputId.pathSegments;
               StringBuffer path = new StringBuffer();
@@ -50,10 +52,11 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
                 }
               }
               improtBuffer.write(
-                  "import 'package:${buildStep.inputId.package}/${path.toString()}entity/${methodElement.returnType.name}.dart\';\n");
+                  "import 'package:${buildStep.inputId.package}/${path.toString()}entity/${methodElement.returnType.getDisplayString(withNullability: null)}.dart\';\n");
             }
           }
-          differentList.add(methodElement.returnType.displayName);
+          differentList.add(
+              methodElement.returnType.getDisplayString(withNullability: null));
           String tempParams;
           int dataCount = 0;
           int uploadCount = 0;
@@ -75,7 +78,8 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
             String fromDataValue = paramsMeta.name;
             String fromDataKey;
 
-            if (queryAnno.type.name == "Query") {
+            if (queryAnno.type.getDisplayString(withNullability: null) ==
+                "Query") {
               fromDataKey = queryAnno.getField("params").toStringValue();
               if (dataCount == 0) {
                 dataBuffer.write(",data:{\'${fromDataKey}\':${fromDataValue},");
@@ -83,7 +87,8 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
                 dataBuffer.write("\'${fromDataKey}\':${fromDataValue},");
               }
               dataCount++;
-            } else if (queryAnno.type.name == "UploadFilePath") {
+            } else if (queryAnno.type.getDisplayString(withNullability: null) ==
+                "UploadFilePath") {
               fromDataKey = queryAnno.getField("params").toStringValue();
               uploadBuffer.write(",\'${fromDataKey}\',${fromDataValue}");
               uploadCount++;
@@ -94,7 +99,7 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
             }
           }
           mapBuffer.write("""
-          return Stream.fromFuture(${metadata.type.name.toLowerCase()}(_dio,\'${metadata.getField("sufUrl").toStringValue()}\'
+          return Stream.fromFuture(${metadata.type.getDisplayString(withNullability: null).toLowerCase()}(_dio,\'${metadata.getField("sufUrl").toStringValue()}\'
           """);
           if (uploadBuffer.toString().isNotEmpty) {
             mapBuffer.write(uploadBuffer.toString());
@@ -108,13 +113,15 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
           //              }
 
 //                Map map = json.decode(value.toString());
-//                return ${methodElement.returnType.name}.fromJson(map);
+//                return ${methodElement.returnType.getDisplayString(withNullability: null)}.fromJson(map);
           mapBuffer.write("))");
-          if (!outList.contains(methodElement.returnType.displayName)) {
-            outList.add(methodElement.returnType.displayName);
+          if (!outList.contains(methodElement.returnType
+              .getDisplayString(withNullability: null))) {
+            outList.add(methodElement.returnType
+                .getDisplayString(withNullability: null));
             outBuffer.write("""
-            ${methodElement.returnType.displayName} parse${methodElement.returnType.displayName}(String value){
-              return ${methodElement.returnType.displayName}.fromJson(json.decode(value));
+            ${methodElement.returnType.getDisplayString(withNullability: null)} parse${methodElement.returnType.getDisplayString(withNullability: null)}(String value){
+              return ${methodElement.returnType.getDisplayString(withNullability: null)}.fromJson(json.decode(value));
             }\n
           """);
           }
@@ -122,7 +129,7 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
           mapBuffer.write("""
             .flatMap((value){
               if(value!=null&&(value.statusCode>=200&&value.statusCode<300)){
-                  return Stream.fromFuture(compute(parse${methodElement.returnType.name}, value.toString()));
+                  return Stream.fromFuture(compute(parse${methodElement.returnType.getDisplayString(withNullability: null)}, value.toString()));
               }else {
                 throw Exception("--未知网络错误--");
               }
@@ -132,13 +139,13 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
 //            .map((value){
 //              if(value!=null&&value.statusCode==200){
 //                Map map = json.decode(value.toString());
-//                return ${methodElement.returnType.name}.fromJson(map);
+//                return ${methodElement.returnType.getDisplayString(withNullability: null)}.fromJson(map);
 //              }
 //            });
 //          """);
 
           methodBuffer.write("""               
-                  Stream<${methodElement.returnType.name}> ${methodElement.name}(Dio _dio,${tempParams == null ? "" : tempParams}){
+                  Stream<${methodElement.returnType.getDisplayString(withNullability: null)}> ${methodElement.name}(Dio _dio,${tempParams == null ? "" : tempParams}){
                     ${mapBuffer.toString()}
                   }
                   """);
