@@ -11,6 +11,7 @@ import 'package:build/src/builder/build_step.dart';
 import 'package:flutter_common/Annotations/anno/ServiceCenter.dart';
 import 'package:flutter_common/Annotations/restore/ServerRestore.dart';
 import 'package:source_gen/source_gen.dart';
+// import 'package:flutter/material.dart';
 
 class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
   @override
@@ -27,6 +28,7 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
     StringBuffer mapBuffer = new StringBuffer();
     List<String> outList = [];
     List<String> differentList = [];
+    // MethodElement
     for (var methodElement in (element as ClassElement).methods) {
       for (var annometadata in methodElement.metadata) {
         final metadata = annometadata.computeConstantValue();
@@ -65,17 +67,23 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
           StringBuffer dataBuffer = StringBuffer();
           StringBuffer uploadBuffer = StringBuffer();
           for (int i = 0; i < methodElement.parameters.length; i++) {
+            // ParameterElement
             var paramsMeta = methodElement.parameters[i];
+            print("zx======param=====${paramsMeta}");
             if (paramsMeta.metadata.length == 0) {
               throw InvalidGenerationSourceError(
                   "Service params need Query or Upload .....");
             }
+            // ElementAnnotation
             var parameter = paramsMeta.metadata[0];
             final queryAnno = parameter.computeConstantValue();
+            // 这里手动处理一下，去掉*，目前还不知道为啥会自带*
+             var paramsMetaStr = "${paramsMeta}".contains("*")? "${paramsMeta}".replaceFirst("*", ""): "${paramsMeta}";
+             print("zx======paramStr=====${paramsMetaStr}");
             if (tempParams == null) {
-              tempParams = "${paramsMeta}";
+              tempParams = "${paramsMetaStr}";
             } else {
-              tempParams = "${tempParams},${paramsMeta}";
+              tempParams = "${tempParams},${paramsMetaStr}";
             }
             String fromDataValue = paramsMeta.name;
             String fromDataKey;
