@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="33d850cd-a2dd-49da-bcaf-e515329da3c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/build_runner.dart-2.10.4.snapshot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commonModel/luban/Luban.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/commonModel/luban/Luban.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="false" />
@@ -41,16 +45,17 @@
   <component name="ProjectId" id="1YxsLiGDeDSQau6KYNXH6GFeLIW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="$ENABLE_FLUTTER_DESKTOP$" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="editor.config.ad.shown" value="$ENABLE_FLUTTER_DESKTOP$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commonModel/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -81,13 +86,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="25" key="SettingsEditor" timestamp="1608806237119">
@@ -98,14 +102,16 @@
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state x="572" y="158" key="Vcs.Push.Dialog.v2/0.25.1920.971/1920.25.1680.1025@0.25.1920.971" timestamp="1608862274868" />
-    <state x="423" y="180" width="833" height="590" key="find.popup" timestamp="1608806868361">
-      <screen x="0" y="25" width="1680" height="947" />
+    <state x="423" y="172" width="833" height="655" key="find.popup" timestamp="1612438839689">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="423" y="172" width="833" height="655" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1612438839689" />
     <state x="423" y="180" width="833" height="590" key="find.popup/0.25.1680.947@0.25.1680.947" timestamp="1608806868361" />
     <state x="423" y="180" width="833" height="590" key="find.popup/0.25.1680.949@0.25.1680.949" timestamp="1608806380396" />
-    <state x="481" y="25" width="958" height="971" key="search.everywhere.popup" timestamp="1608861973876">
-      <screen x="0" y="25" width="1920" height="971" />
+    <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup" timestamp="1612610582629">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1612610582629" />
     <state x="421" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1680.949@0.25.1680.949" timestamp="1608806364904" />
     <state x="481" y="25" width="958" height="971" key="search.everywhere.popup/0.25.1920.971/1920.25.1680.1025@0.25.1920.971" timestamp="1608861973876" />
   </component>

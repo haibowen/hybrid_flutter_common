@@ -7,18 +7,18 @@ targets:
 builders:
 
   user:
-    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
-    builder_factories: ["userBuilder"]
-    build_extensions: {'.dart': ['.user.dart'] }
-    auto_apply: root_package
-    build_to: source
+    import: "package:flutter_common/Annotations/ServiceGenerator.dart" #导入builder所在包路径
+    builder_factories: ["userBuilder"] #返回builder方法名称列表
+    build_extensions: {'.dart': ['.user.dart'] } #输入扩展名和输出扩展名的映射
+    auto_apply: root_package #仅将此生成器用于顶级软件包，枚举值 none、dependents、all_packages、root_package
+    build_to: source #输出进入其主要输入的源树，枚举值 cache、source
 
   Router:
     import: "package:flutter_common/Annotations/ServiceGenerator.dart"
     builder_factories: ["routerBuilder"]
     build_extensions: {'.dart': ['.rout.dart'] }
     auto_apply: root_package
-    runs_before: [':routerCenter']
+    runs_before: [':routerCenter'] #用于调整构建顺序
     build_to: cache
 
 
@@ -38,13 +38,13 @@ builders:
     runs_before: [':apiGenerator']
 
 
-#  dio_entity:
-#    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
-#    builder_factories: ["dioBuilder"]
-#    build_extensions: {".dart": [".dio.dart"]}
-#    auto_apply: root_package
-#    build_to: cache
-#    runs_before: [':apiGenerator']
+  #  dio_entity:
+  #    import: "package:flutter_common/Annotations/ServiceGenerator.dart"
+  #    builder_factories: ["dioBuilder"]
+  #    build_extensions: {".dart": [".dio.dart"]}
+  #    auto_apply: root_package
+  #    build_to: cache
+  #    runs_before: [':apiGenerator']
 
   apiGenerator:
     import: "package:flutter_common/Annotations/ServiceGenerator.dart"
