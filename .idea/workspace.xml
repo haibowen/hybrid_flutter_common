@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33d850cd-a2dd-49da-bcaf-e515329da3c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/build_runner.dart-2.10.4.snapshot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="false" />
@@ -94,6 +87,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614323120928">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1614323120928" />
     <state x="225" y="25" key="SettingsEditor" timestamp="1608806237119">
       <screen x="0" y="25" width="1680" height="949" />
     </state>
@@ -102,16 +99,16 @@
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state x="572" y="158" key="Vcs.Push.Dialog.v2/0.25.1920.971/1920.25.1680.1025@0.25.1920.971" timestamp="1608862274868" />
-    <state x="423" y="172" width="833" height="655" key="find.popup" timestamp="1612438839689">
+    <state x="423" y="172" width="833" height="655" key="find.popup" timestamp="1614326312135">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="423" y="172" width="833" height="655" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1612438839689" />
+    <state x="423" y="172" width="833" height="655" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1614326312135" />
     <state x="423" y="180" width="833" height="590" key="find.popup/0.25.1680.947@0.25.1680.947" timestamp="1608806868361" />
     <state x="423" y="180" width="833" height="590" key="find.popup/0.25.1680.949@0.25.1680.949" timestamp="1608806380396" />
-    <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup" timestamp="1612610582629">
+    <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup" timestamp="1614326300225">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1612610582629" />
+    <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1614326300225" />
     <state x="421" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1680.949@0.25.1680.949" timestamp="1608806364904" />
     <state x="481" y="25" width="958" height="971" key="search.everywhere.popup/0.25.1920.971/1920.25.1680.1025@0.25.1920.971" timestamp="1608861973876" />
   </component>
