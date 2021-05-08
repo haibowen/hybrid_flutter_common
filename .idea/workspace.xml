@@ -7,7 +7,7 @@
     <list default="true" id="33d850cd-a2dd-49da-bcaf-e515329da3c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="false" />
@@ -26,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectConfigurationFiles">
@@ -91,25 +96,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1614323120928" />
-    <state x="225" y="25" key="SettingsEditor" timestamp="1608806237119">
-      <screen x="0" y="25" width="1680" height="949" />
+    <state x="224" y="25" key="SettingsEditor" timestamp="1620458633975">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="225" y="25" key="SettingsEditor/0.25.1680.949@0.25.1680.949" timestamp="1608806237119" />
-    <state x="572" y="158" key="Vcs.Push.Dialog.v2" timestamp="1608862274868">
-      <screen x="0" y="25" width="1920" height="971" />
-    </state>
-    <state x="572" y="158" key="Vcs.Push.Dialog.v2/0.25.1920.971/1920.25.1680.1025@0.25.1920.971" timestamp="1608862274868" />
+    <state x="224" y="25" key="SettingsEditor/149.1105.1680.945/0.25.1920.1055@0.25.1920.1055" timestamp="1620458633975" />
     <state x="423" y="172" width="833" height="655" key="find.popup" timestamp="1614326312135">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="423" y="172" width="833" height="655" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1614326312135" />
-    <state x="423" y="180" width="833" height="590" key="find.popup/0.25.1680.947@0.25.1680.947" timestamp="1608806868361" />
-    <state x="423" y="180" width="833" height="590" key="find.popup/0.25.1680.949@0.25.1680.949" timestamp="1608806380396" />
     <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup" timestamp="1614326300225">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="421" y="0" width="839" height="1050" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1614326300225" />
-    <state x="421" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1680.949@0.25.1680.949" timestamp="1608806364904" />
-    <state x="481" y="25" width="958" height="971" key="search.everywhere.popup/0.25.1920.971/1920.25.1680.1025@0.25.1920.971" timestamp="1608861973876" />
   </component>
 </project>
