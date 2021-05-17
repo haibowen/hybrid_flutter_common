@@ -78,8 +78,10 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
             var parameter = paramsMeta.metadata[0];
             final queryAnno = parameter.computeConstantValue();
             // 这里手动处理一下，去掉*，目前还不知道为啥会自带*
-             var paramsMetaStr = "${paramsMeta}".contains("*")? "${paramsMeta}".replaceFirst("*", ""): "${paramsMeta}";
-             print("zx======paramStr=====${paramsMetaStr}");
+            var paramsMetaStr = "${paramsMeta}".contains("*")
+                ? "${paramsMeta}".replaceFirst("*", "")
+                : "${paramsMeta}";
+            print("zx======paramStr=====${paramsMetaStr}");
             if (tempParams == null) {
               tempParams = "${paramsMetaStr}";
             } else {
@@ -333,15 +335,15 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
       
       String formatError(DioError e) {
         String reason = "";
-        if (e.type == DioErrorType.CONNECT_TIMEOUT) {
+        if (e.type == DioErrorType.connectTimeout) {
           reason = "连接超时 \${e.message}";
-        } else if (e.type == DioErrorType.SEND_TIMEOUT) {
+        } else if (e.type == DioErrorType.sendTimeout) {
           reason = "请求超时 \${e.message}";
-        } else if (e.type == DioErrorType.RECEIVE_TIMEOUT) {
+        } else if (e.type == DioErrorType.receiveTimeout) {
           reason = "响应超时 \${e.message}";
-        } else if (e.type == DioErrorType.RESPONSE) {
+        } else if (e.type == DioErrorType.response) {
           reason = "出现异常 \${e.message}";
-        } else if (e.type == DioErrorType.CANCEL) {
+        } else if (e.type == DioErrorType.cancel) {
           reason = "请求取消 \${e.message}";
         } else {
           reason = "未知错误 \${e.message}";
