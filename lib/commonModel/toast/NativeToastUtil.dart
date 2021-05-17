@@ -3,7 +3,7 @@
  * @date   2020/5/8
  **/
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 
 class NativeToastUtil {
   static int lastTime;
@@ -25,13 +25,13 @@ class NativeToastUtil {
     }
     lastTime = DateTime.now().millisecondsSinceEpoch;
     lastWorld = text;
-    Fluttertoast.showToast(
-        msg: text,
-        toastLength: long ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Color(0xcc000000),
-        textColor: Colors.white,
-        fontSize: 15.0);
+    // Fluttertoast.showToast(
+    //     msg: text,
+    //     toastLength: long ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT,
+    //     gravity: ToastGravity.CENTER,
+    //     timeInSecForIosWeb: 1,
+    //     backgroundColor: Color(0xcc000000),
+    //     textColor: Colors.white,
+    //     fontSize: 15.0);
   }
 }
