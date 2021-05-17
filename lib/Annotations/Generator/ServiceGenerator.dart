@@ -301,7 +301,7 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
         if(!inProduction){
           try {
             if(response!=null){
-              traceBuffer.write("gmTraceStart-> useTime:\${useTime} method:\${response.request.method} uri:\${response.request.uri} heads:\${response.request.headers.toString()} params:\${response.request.queryParameters} datas:\${response.request.queryParameters.toString()} respondData:\${response.toString()} <-gmTraceEnd @@");
+              traceBuffer.write("gmTraceStart-> useTime:\${useTime} method:\${response.requestOptions.method} uri:\${response.requestOptions.uri} heads:\${response.requestOptions.headers.toString()} params:\${response.requestOptions.queryParameters} datas:\${response.requestOptions.queryParameters.toString()} respondData:\${response.toString()} <-gmTraceEnd @@");
             }
             printRespond(response);
           } catch (ex) {
@@ -312,13 +312,13 @@ class ServiceGenerator extends GeneratorForAnnotation<ServiceCenter> {
 
       static void printRespond(Response response) {
         Map httpLogMap = Map();
-        httpLogMap.putIfAbsent("requestMethod", () => "\${response.request.method}");
-        httpLogMap.putIfAbsent("requestUrl", () => "\${response.request.uri}");
-        httpLogMap.putIfAbsent("requestHeaders", () => response.request.headers);
+        httpLogMap.putIfAbsent("requestMethod", () => "\${response.requestOptions.method}");
+        httpLogMap.putIfAbsent("requestUrl", () => "\${response.requestOptions.uri}");
+        httpLogMap.putIfAbsent("requestHeaders", () => response.requestOptions.headers);
         httpLogMap.putIfAbsent(
-            "requestQueryParameters", () => response.request.queryParameters);
-        if(response.request.data is FormData){
-          httpLogMap.putIfAbsent("requestDataFields",() => ((response.request.data as FormData).fields.toString()));
+            "requestQueryParameters", () => response.requestOptions.queryParameters);
+        if(response.requestOptions.data is FormData){
+          httpLogMap.putIfAbsent("requestDataFields",() => ((response.requestOptions.data as FormData).fields.toString()));
         }
         httpLogMap.putIfAbsent("respondData", () => json.decode (response.toString()));
         printJson(httpLogMap);
